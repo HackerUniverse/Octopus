@@ -2142,7 +2142,8 @@ sub crawler ( ) {
 sub databasedorks ( ) {
     print item(),"Hint: Inject directly into google search \n ";	    
     print item(),"Showing Database Dorks \n ";	    
-    if (system("\ncat databasedorks\n") == 0) {
+    if (system("cat databasedorks") == 0) {
+	print "\n";
 	print item(),"success!\n";	
 	}
 	else {
