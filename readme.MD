@@ -3,8 +3,9 @@
 # Octopuss
 - An Automated Database Hacking Software
 
-# Document: Breaking into the databases from the internet using octopuss
-- Soon
+# Octopus Document
+- Breaking into the databases from the internet
+- Uploading soon
 
 # Database Vulnerabilities List
 - Port Scanning
