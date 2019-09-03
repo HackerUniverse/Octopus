@@ -24,10 +24,16 @@
     <img src="https://i.ibb.co/Vq3FycT/2.png" width="600px"</img> 
 </div>
 
-
 # Android Termux / Linux Installation
+- NO ROOT REQUIRED
 - chmod u+x *.sh
 - ./Universal_Installer.sh
+
+# Installation Interface
+<div align="center">
+    <img src="https://i.ibb.co/vZHmbXr/3.png" width="600px"</img> 
+</div>
+
 
 # Compatible
 - Android Led TV, Termux, Linux, Windows
