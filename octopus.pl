@@ -1849,7 +1849,6 @@ sub couchdBinfo ( ) {
 #           34 - My-SQL Vulernability Combo                    #
 #--------------------------------------------------------------#
 sub mysqlvcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     if (system("nmap -sV -Pn --script ms-sql* --script-args brute.threads=1,brute.start=1  $mysqlvcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1863,7 +1862,6 @@ sub mysqlvcombo ( ) {
 #           35 - CouchdB Vulnerability Combo                   #
 #--------------------------------------------------------------#
 sub couchdbvcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     if (system("nmap -sV -Pn --script chouch* --script-args brute.threads=1,brute.start=1  $couchdbvcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1877,7 +1875,6 @@ sub couchdbvcombo ( ) {
 #           36 - MS-SQL Vulnerability Combo                    #
 #--------------------------------------------------------------#
 sub mssqlvcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     if (system("nmap -sV -Pn --script ms-sql* --script-args brute.threads=1,brute.start=1  $mssqlvcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1890,8 +1887,7 @@ sub mssqlvcombo ( ) {
 #--------------------------------------------------------------#
 #           37 - ORACLE Vulnerability Combo                    #
 #--------------------------------------------------------------#
-sub oraclevcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
+sub oraclevcombo ( ) {    
     if (system("nmap -sV -Pn --script oracle* --script-args brute.threads=1,brute.start=1  $oraclevcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1905,7 +1901,6 @@ sub oraclevcombo ( ) {
 #           38 - InfluxDb Vulnerability Combo                  #
 #--------------------------------------------------------------#
 sub influxdbvcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     if (system("nmap -sV -Pn -p8080,8081,8082,8083,8084,8085,8086,8087,8088 --script-args brute.threads=1,brute.start=1  $influxdbvcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1918,8 +1913,7 @@ sub influxdbvcombo ( ) {
 #--------------------------------------------------------------#
 #           39 - MariadB Vulnerability Combo                   #
 #--------------------------------------------------------------#
-sub mariadbvcombo ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
+sub mariadbvcombo ( ) {    
     if (system("nmap -sV --script vuln --script-args brute.threads=1,brute.start=1 -p3306 $mariadbvcombov") == 0) {
 	print item(),"success!\n";
 	}
@@ -1985,7 +1979,6 @@ sub hydraoracle ( ) {
 #           41 - Oscanner - Enumerate SIDS and Valid Passwords #
 #--------------------------------------------------------------#
 sub oscanner ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     print item(),"Enter Oracle Port Number : ";	    
     chomp($port=<STDIN>);            
     if (system("oscanner -s $oscannerv -P $port ") == 0) {
@@ -2001,7 +1994,6 @@ sub oscanner ( ) {
 #           42 - Odat - Load All Oracle Attack Modules         #
 #--------------------------------------------------------------#
 sub odatscanner ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
     print item(),"Enter Oracle Port Number : ";	    
     chomp($port=<STDIN>);            
     if (system("odat.py all -s $odatscannerv -p $port") == 0) {
@@ -2016,8 +2008,7 @@ sub odatscanner ( ) {
 #--------------------------------------------------------------#
 #           43 - 0dat - TNS CMD RCE Poison                     #
 #--------------------------------------------------------------#
-sub odatscannertnscmd ( ) {
-    print item(),"Retrieve Build and Server Status \n\n";
+sub odatscannertnscmd ( ) {    
     print item(),"Enter Oracle Port Number : ";	    
     chomp($port=<STDIN>);            
     if (system("odat.py tnscmd -s $odatscannertnscmdv -p $port --indent") == 0) {
@@ -2149,8 +2140,9 @@ sub crawler ( ) {
 #           52 - Database Dorks                                #
 #--------------------------------------------------------------#
 sub databasedorks ( ) {
-    print item(),"File output : links.txt \n ";	    
-    if (system("python3 cobra.py --wait=2 --download $crawlerv > links.txt") == 0) {
+    print item(),"Hint: Inject directly into google search \n ";	    
+    print item(),"Showing Database Dorks \n ";	    
+    if (system("cat databasedorks") == 0) {
 	print item(),"success!\n";	
 	}
 	else {
