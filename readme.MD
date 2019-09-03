@@ -30,7 +30,7 @@
 </div>
 
 # Android Termux / Linux Installation
-- chmod u+x *
+- ./chmod u+x *
 - ./Universal_Installer.sh
 - octopus will become system software
 - termux users, simply use: perl octopus.pl after installation
