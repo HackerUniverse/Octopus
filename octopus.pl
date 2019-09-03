@@ -1072,7 +1072,7 @@ sub menu {
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
         print color('bold white');
-        chomp($databasedorksv=<STDIN>);
+        #chomp($databasedorksv=<STDIN>);
         print "\n";
         databasedorks();
         enter();    
@@ -2142,7 +2142,7 @@ sub crawler ( ) {
 sub databasedorks ( ) {
     print item(),"Hint: Inject directly into google search \n ";	    
     print item(),"Showing Database Dorks \n ";	    
-    if (system("cat databasedorks") == 0) {
+    if (system("\ncat databasedorks\n") == 0) {
 	print item(),"success!\n";	
 	}
 	else {
