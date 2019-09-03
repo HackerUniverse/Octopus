@@ -58,19 +58,19 @@ GetOptions(
     "d|oracleinfo=s" => \$oracleinfov,
     "e|influxdbinfo=s" => \$influxdbinfov,
     "f|mssqlconfig=s" => \$mssqlconfigv,
-    "ff|mssqldumphahses=s" => \$mssqldumphahsesv,
-    "g|mssqldumpntml=s" => \$mssqldumpntmlv,
-    "h|mssqlbruteforce=s" => \$mssqlbruteforcev,
-    "i|mssqldac=s" => \$mssqldacv,
-    "j|mssqlemptypassword" => \$mssqlemptypasswordv,
-    "k|mssqlquery=s" => \$mssqlqueryv,
-    "l|mssqlxpshell=s" => \$mssqlxpshellv,
-    "m|msqlbrodcast=s" => \$msqlbrodcastv,
-    "n|mysqlvaliduser=s" => \$mysqlvaliduserv,
-    "o|mysqlpassdguess=s" => \$mysqlpassdguessv,
-    "p|mysqlemptypasswd=s" => \$mysqlemptypasswdv,
-    "q|mysqlalldatabase=s" => \$mysqlalldatabasev,
-    "r|mysqlallusers=s" => \$mysqlallusersv,
+    "g|mssqldumphahses=s" => \$mssqldumphahsesv,
+    "h|mssqldumpntml=s" => \$mssqldumpntmlv,
+    "i|mssqlbruteforce=s" => \$mssqlbruteforcev,
+    "j|mssqldac=s" => \$mssqldacv,
+    "k|mssqlemptypassword" => \$mssqlemptypasswordv,
+    "l|mssqlquery=s" => \$mssqlqueryv,
+    "m|mssqlxpshell=s" => \$mssqlxpshellv,
+    "n|msqlbrodcast=s" => \$msqlbrodcastv,
+    "o|mysqlvaliduser=s" => \$mysqlvaliduserv,
+    "p|mysqlpassdguess=s" => \$mysqlpassdguessv,
+    "q|mysqlemptypasswd=s" => \$mysqlemptypasswdv,
+    "r|mysqlalldatabase=s" => \$mysqlalldatabasev,
+    "s|mysqlallusers=s" => \$mysqlallusersv,
     "t|mysqlauditdatabases" => \$mysqlauditdatabasesv,
     "u|mysqlpasswdhashes=s" => \$mysqlpasswdhashesv,
     "v|mysqlauthnbypass=s" => \$mysqlauthnbypassv,
@@ -80,29 +80,29 @@ GetOptions(
     "z|oraclepasswordhash=s" => \$oraclepasswordhashv,
     "aa|oracleenumerateusernames=s" => \$oracleenumerateusernamesv,
     "ab|oracletnshack=s" => \$oracletnshackv,
-    "aaaa|oraclesid=s" => \$oraclesidv,
-    "ac|mangodbdatabases" => \$mangodbdatabasesv,    
-    "ad|mangodBinfo=s" => \$mangodBinfov,
-    "ae|couchdBinfo=s" => \$couchdBinfov,
-    "a|mysqlvcombo=s" => \$mysqlvcombov,
-    "a|couchdbvcombo=s" => \$couchdbvcombov,
-    "a|mssqlvcombo=s" => \$mssqlvcombov,
-    "a|oraclevcombo=s" => \$oraclevcombov,    
-    "k|influxdbvcombo=s" => \$influxdbvcombov,
-    "l|mariadbvcombo=s" => \$mariadbvcombov,
-    "m|hydraoracle=s" => \$hydraoraclev,
-    "n|oscanner=s" => \$oscannerv,
-    "o|odatscanner=s" => \$odatscannerv,
-    "p|odatscannertnscmd=s" => \$odatscannertnscmdv,
-    "q|nmapchecks=s" => \$nmapchecksv,    
-    "r|findiis=s" => \$findiisv,
-    "s|nikto=s" => \$niktov,    
-    "t|sqlmap=s" => \$sqlmapv,    
-    "u|sqliv=s" => \$sqlivv,
-    "v|cewl=s" => \$cewlv,    
-    "w|uri=s" => \$uriv,
-    "x|crawler" => \$crawlerv,    
-    "y|databasedorks=s" => \$databasedorksv,
+    "ac|oraclesid=s" => \$oraclesidv,
+    "ad|mangodbdatabases" => \$mangodbdatabasesv,    
+    "ae|mangodBinfo=s" => \$mangodBinfov,
+    "af|couchdBinfo=s" => \$couchdBinfov,
+    "ag|mysqlvcombo=s" => \$mysqlvcombov,
+    "ah|couchdbvcombo=s" => \$couchdbvcombov,
+    "ai|mssqlvcombo=s" => \$mssqlvcombov,
+    "aj|oraclevcombo=s" => \$oraclevcombov,    
+    "ak|influxdbvcombo=s" => \$influxdbvcombov,
+    "al|mariadbvcombo=s" => \$mariadbvcombov,
+    "am|hydraoracle=s" => \$hydraoraclev,
+    "an|oscanner=s" => \$oscannerv,
+    "ao|odatscanner=s" => \$odatscannerv,
+    "ap|odatscannertnscmd=s" => \$odatscannertnscmdv,
+    "aq|nmapchecks=s" => \$nmapchecksv,    
+    "ar|findiis=s" => \$findiisv,
+    "as|nikto=s" => \$niktov,    
+    "at|sqlmap=s" => \$sqlmapv,    
+    "au|sqliv=s" => \$sqlivv,
+    "av|cewl=s" => \$cewlv,    
+    "aw|uri=s" => \$uriv,
+    "ax|crawler" => \$crawlerv,    
+    "ay|databasedorks=s" => \$databasedorksv,
     
 );
 
@@ -206,7 +206,7 @@ sub help {
     print color('bold cyan'),"#                   ";
     print item('7'),"MS-SQL - Dump Hashes ";
     print color('bold red'),"  => ";
-    print color("bold white"),"octopus -ff site.com";
+    print color("bold white"),"octopus -g site.com";
     print color('bold cyan'),"                   #   \n";
 
     print color('bold cyan'),"#                   ";
@@ -218,26 +218,26 @@ sub help {
     print color('bold cyan'),"#                   ";
     print item('9'),"MS-SQL - Brute Force  ";
     print color('bold red'),"  => ";
-    print color("bold white"),"octopus -g site.com";
+    print color("bold white"),"octopus -i site.com";
     print color('bold cyan'),"                   #   \n";
 
     print color('bold cyan'),"#                   ";
     print item('10'),"MS-SQL check Backup Dedicated Admin Connection ";
     print color('bold red'),"  => ";
-    print color("bold white"),"octopus -i site.com";
+    print color("bold white"),"octopus -j site.com";
     print color('bold cyan'),"                   #   \n";
 
     print color('bold cyan'),"#                   ";
     print item('11'),"MS-SQL Empty Password ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -j site.com";
+    print color("bold white"),"octopus -k site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
 
     print color('bold cyan'),"#                   ";
     print item('12'),"MS-SQL Query using default username and password ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -k site.com";
+    print color("bold white"),"octopus -l site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
 
@@ -288,216 +288,193 @@ sub help {
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -s site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-
-    print color('bold cyan'),"#                   ";
-    print item('20'),"My-SQL Audit Local or Compromised Server ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -t site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-    
+        
     print color('bold cyan'),"#                   ";
     print item('21'),"My-SQL Dumps Password Hashes ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -u site.com";
+    print color("bold white"),"octopus -t site.com";
     print color('bold cyan'),"                 #   \n",line_d();
     
     print color('bold cyan'),"#                   ";
     print item('22'),"My-SQL Audit Local or Compromised Server ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -v site.com";
+    print color("bold white"),"octopus -u site.com";
     print color('bold cyan'),"                 #   \n",line_d();
     
     print color('bold cyan'),"#                   ";
     print item('23'),"My-SQL Bypass Server Authenication ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -w site.com";
+    print color("bold white"),"octopus -v site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
     print color('bold cyan'),"#                   ";
     print item('24'),"My-SQL Audit Local or Compromised Server ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -x site.com";
+    print color("bold white"),"octopus -w site.com";
     print color('bold cyan'),"                 #   \n",line_d();
     
     print color('bold cyan'),"#                   ";
     print item('25'),"My-SQL Server Authenication Bypass ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -y site.com";
+    print color("bold white"),"octopus -x site.com";
     print color('bold cyan'),"                 #   \n",line_d(); 
 
     print color('bold cyan'),"#                   ";
-    print item('24'),"MariaDB Server Authenication Bypass ";
+    print item('26'),"MariaDB Server Authenication Bypass ";
     print color('bold red'),"        => ";
-    print color("bold white"),"octopus -t site.com";
+    print color("bold white"),"octopus -y site.com";
     print color('bold cyan'),"                 #   \n",line_d();
     
     print color('bold cyan'),"#                   ";
-    print item('25'),"My-SQL Bypass Server Authenication ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -v site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-
-    print color('bold cyan'),"#                   ";
-    print item('26'),"ORACLE - Perform Brute Force ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -u site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-    
-    print color('bold cyan'),"#                   ";
-    print item('27'),"ORACLE - Decodes the VSNNUM ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -x site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-
-    print color('bold cyan'),"#                   ";
-    print item('28'),"ORACLE - Perform Session key for Password Hash ";
+    print item('27'),"My-SQL Bypass Server Authenication ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -z site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-    
-    print color('bold cyan'),"#                   ";
-    print item('29'),"ORACLE - Enumerate valid Oracle user names ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -aa site.com";
-    print color('bold cyan'),"                 #   \n",line_d(); 
 
     print color('bold cyan'),"#                   ";
-    print item('30'),"ORACLE - Check TNS poison Vulnerability ";
+    print item('28'),"ORACLE - Perform Brute Force ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"octopus -aa site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('29'),"ORACLE - Decodes the VSNNUM ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ab site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-        
+
     print color('bold cyan'),"#                   ";
-    print item('31'),"MANGODB - List MandodB Database ";
+    print item('30'),"ORACLE - Perform Session key for Password Hash ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ac site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-        
+    
     print color('bold cyan'),"#                   ";
-    print item('31'),"MANGODB - List MandodB Database ";
-    print color('bold red'),"        => ";
-    print color("bold white"),"octopus -ac site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-        
-    print color('bold cyan'),"#                   ";
-    print item('32'),"MANGODB - Extract MandodB Info ";
+    print item('31'),"ORACLE - Enumerate valid Oracle user names ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ad site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-        
+    print color('bold cyan'),"                 #   \n",line_d(); 
+
     print color('bold cyan'),"#                   ";
-    print item('33'),"COUCHDB - Extract Database Info ";
+    print item('32'),"ORACLE - Check TNS poison Vulnerability ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ae site.com";
     print color('bold cyan'),"                 #   \n",line_d();
         
     print color('bold cyan'),"#                   ";
-    print item('34'),"MYSQL - COMBO Vulernabilities Scan ";
+    print item('33'),"MANGODB - List MandodB Database ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -af site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-     
+        
     print color('bold cyan'),"#                   ";
-    print item('35'),"ORACLE - COMBO Vulernabilities Scan ";
+    print item('34'),"MANGODB - Extract MandodB Info ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ag site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-     
+        
     print color('bold cyan'),"#                   ";
-    print item('36'),"ORACLE - COMBO Vulernabilities Scan ";
+    print item('35'),"COUCHDB - Extract Database Info ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ah site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-     
-     print color('bold cyan'),"#                   ";
-    print item('37'),"InfluxdB - COMBO Vulernabilities Scan ";
+        
+    print color('bold cyan'),"#                   ";
+    print item('36'),"MYSQL - COMBO Vulernabilities Scan ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ai site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
-     print color('bold cyan'),"#                   ";
-    print item('38'),"MariadB - Extract Database Info ";
+    print color('bold cyan'),"#                   ";
+    print item('37'),"ORACLE - COMBO Vulernabilities Scan ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -aj site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
-     print color('bold cyan'),"#                   ";
-    print item('39'),"Hyra - Oracle ";
+    print color('bold cyan'),"#                   ";
+    print item('38'),"ORACLE - COMBO Vulernabilities Scan ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ak site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
      print color('bold cyan'),"#                   ";
-    print item('40'),"Oscanner ";
+    print item('39'),"InfluxdB - COMBO Vulernabilities Scan ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -al site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
-     print color('bold cyan'),"#                   ";
-    print item('41'),"Odat Scanner ";
+    print color('bold cyan'),"#                   ";
+    print item('40'),"Hyra - Oracle ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -am site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
-    print color('bold cyan'),"#                   ";
-    print item('42'),"Odat Scaner CMD ";
+     print color('bold cyan'),"#                   ";
+    print item('41'),"Oscanner ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -an site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
-    print color('bold cyan'),"#                   ";
-    print item('43'),"Nmap Checks ";
+     print color('bold cyan'),"#                   ";
+    print item('42'),"Odat Scanner ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ao site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
     print color('bold cyan'),"#                   ";
-    print item('44'),"Find IIS Directories ";
+    print item('43'),"Odat Scaner CMD ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ap site.com";
     print color('bold cyan'),"                 #   \n",line_d();
      
     print color('bold cyan'),"#                   ";
-    print item('45'),"Nikto ";
+    print item('44'),"Nmap Checks ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -aq site.com";
-    print color('bold cyan'),"                 #   \n",line_d();     
-      
+    print color('bold cyan'),"                 #   \n",line_d();
+     
     print color('bold cyan'),"#                   ";
-    print item('46'),"SQLMAP ";
+    print item('45'),"Find IIS Directories ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ar site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-      
+     
     print color('bold cyan'),"#                   ";
-    print item('47'),"SQLiV ";
+    print item('46'),"Nikto ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -as site.com";
-    print color('bold cyan'),"                 #   \n",line_d();
-    
+    print color('bold cyan'),"                 #   \n",line_d();     
+      
     print color('bold cyan'),"#                   ";
-    print item('48'),"CEWL ";
+    print item('47'),"SQLMAP ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -at site.com";
     print color('bold cyan'),"                 #   \n",line_d();
       
     print color('bold cyan'),"#                   ";
-    print item('49'),"URI ";
+    print item('48'),"SQLiV ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -au site.com";
     print color('bold cyan'),"                 #   \n",line_d();
-              
+    
     print color('bold cyan'),"#                   ";
-    print item('50'),"Crawler ";
+    print item('49'),"CEWL ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -av site.com";
     print color('bold cyan'),"                 #   \n",line_d();
       
     print color('bold cyan'),"#                   ";
-    print item('51'),"URI ";
+    print item('50'),"URI ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"octopus -aw site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+              
+    print color('bold cyan'),"#                   ";
+    print item('51'),"Crawler ";
     print color('bold red'),"        => ";
     print color("bold white"),"octopus -ax site.com";
     print color('bold cyan'),"                 #   \n",line_d();
+          
      
     print color('bold cyan'),"#                   ";
     print item('52'),"Database Dorks ";
