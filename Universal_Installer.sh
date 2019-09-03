@@ -107,9 +107,9 @@ echo "y" | apt-get install smbclient
 echo "y" | apt-get install gem
 gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
-echo "y" | git clone https://github.com/xroche/httrack.git --recurse
-cd httrack
-./configure --prefix=$HOME/usr && make -j8 && make install
+echo "y" | git clone https://github.com/JukArkadiy/odat.git
+cd odat
+chmod u+x *
 cd ..
 echo "y" | apt-get install nmap
 echo "y" | apt-get install xrdp
