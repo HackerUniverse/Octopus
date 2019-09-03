@@ -24,14 +24,16 @@
     <img src="https://i.ibb.co/Vq3FycT/2.png" width="600px"</img> 
 </div>
 
-# Android Termux / Linux Installation
-- chmod u+x *.sh
-- ./Universal_Installer.sh
-
 # Automated Installation Interface
 <div align="center">
     <img src="https://i.ibb.co/vZHmbXr/3.png" width="600px"</img> 
 </div>
+
+# Android Termux / Linux Installation
+- chmod u+x *
+- ./Universal_Installer.sh
+- octopus will become system software
+- termux users, simply use: perl octopus.pl after installation
 
 # Compatible
 - Android Led TV, Termux, Linux, Windows
