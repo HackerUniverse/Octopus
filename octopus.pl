@@ -594,16 +594,16 @@ sub menu {
     print color('bold cyan'),"					#          ";print color('reset'),item('40'),"ORACLE    - BruteForce -  Listener with Hydra";print color('bold cyan'),"             #   \n";
     print color('bold cyan'),"					#          ";print color('reset'),item('41'),"ORACLE    - Enumerate SID Common Passwords with OScanner";print color('bold cyan'),"  #   \n";
     print color('bold cyan'),"					#          ";print color('reset'),item('42'),"ORACLE    - BruteForce - SID with Hydra";print color('bold cyan'),"                   #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('43'),"ORACLE    - BruteForce - Oracle SQL-Login with Hydra";print color('bold cyan'),"      #   \n";                                
-    print color('bold cyan'),"					#          ";print color('reset'),item('44'),"ORACLE    - Load Odat Tool";print color('bold cyan'),"                                #   \n";    
-    print color('bold cyan'),"					#          ";print color('reset'),item('45'),"DEADLOCKS - Check RDP, MS RPC and Netbios Ports";print color('bold cyan'),"           #   \n";                            
-    print color('bold cyan'),"					#          ";print color('reset'),item('46'),"DEADLOCKS - Find IIS Directories";print color('bold cyan'),"                          #   \n";    
-    print color('bold cyan'),"					#          ";print color('reset'),item('47'),"DEADLOCKS - CHECK - words and write that into wordlist";print color('bold cyan'),"    #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('48'),"DEADLOCKS - Perform Nikto Scan on Server";print color('bold cyan'),"                  #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('49'),"DEADLOCKS - Perform SQLMAP on Parameter";print color('bold cyan'),"                   #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('50'),"DEADLOCKS - Perform SQLiv on Parameter";print color('bold cyan'),"                    #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('51'),"DEADLOCKS - SHOW - Web URI";print color('bold cyan'),"                                #   \n";
-    print color('bold cyan'),"					#          ";print color('reset'),item('52'),"DEADLOCKS - SHOW - Crawl for URI from Complete Website";print color('bold cyan'),"    #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('43'),"ORACLE    - Load Odat Tool";print color('bold cyan'),"                                #   \n";                                
+    print color('bold cyan'),"					#          ";print color('reset'),item('44'),"ORACLE    - Check RDP, MS RPC and Netbios Ports";print color('bold cyan'),"           #   \n";    
+    print color('bold cyan'),"					#          ";print color('reset'),item('45'),"DEADLOCKS - Find IIS Directories";print color('bold cyan'),"                          #   \n";    
+    print color('bold cyan'),"					#          ";print color('reset'),item('46'),"DEADLOCKS - Perform Nikto Scan on Server";print color('bold cyan'),"                  #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('47'),"DEADLOCKS - Perform SQLMAP on Parameter";print color('bold cyan'),"                   #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('48'),"DEADLOCKS - Perform SQLiv on Parameter";print color('bold cyan'),"                    #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('49'),"DEADLOCKS - CHECK - words and write that into wordlist";print color('bold cyan'),"    #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('50'),"DEADLOCKS - SHOW - Web URI";print color('bold cyan'),"                                #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('51'),"DEADLOCKS - SHOW - Crawl for URI from Complete Website";print color('bold cyan'),"    #   \n";
+    print color('bold cyan'),"					#          ";print color('reset'),item('52'),"Database  - Use Database Dorks";print color('bold cyan'),"                            #   \n";
     print line_d(),color('bold cyan'),"					   ";    
     print color('bold green'),"\nOctopus: _>  ";
     print color('reset');
@@ -1022,7 +1022,7 @@ sub menu {
         print "\n";
         nikto();
         enter();
-    }if($number eq '48'){
+    }if($number eq '47'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
@@ -1031,7 +1031,7 @@ sub menu {
         print "\n";
         sqlmap();
         enter();
-    }if($number eq '49'){
+    }if($number eq '48'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
@@ -1040,7 +1040,7 @@ sub menu {
         print "\n";
         sqliv();
         enter();
-    }if($number eq '50'){
+    }if($number eq '49'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
@@ -1049,7 +1049,7 @@ sub menu {
         print "\n";
         cewl();
         enter();
-    }if($number eq '51'){
+    }if($number eq '50'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
@@ -1058,7 +1058,7 @@ sub menu {
         print "\n";
         uri();
         enter();
-    }if($number eq '52'){
+    }if($number eq '51'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
@@ -1067,7 +1067,7 @@ sub menu {
         print "\n";
         crawler();
         enter();
-    }if($number eq '53'){
+    }if($number eq '52'){
         banner();
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
