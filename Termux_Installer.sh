@@ -94,6 +94,15 @@ pip install terminaltables
 pip install jsbeautifier
 pip install argparse
 pip install requests
+pip install jsbeautifier
+pip install tabulate
+pip install terminaltables
+pip install argparse
+pip install requests
+pip install bs4
+pip install termcolor
+pip install terminaltables
+pip install nyawc
 pip install request
 cd SearchEngineScrapy
 pip install -r requirements.txt
