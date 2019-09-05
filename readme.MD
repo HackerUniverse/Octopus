@@ -39,5 +39,16 @@
 - ./Linux_Universal_Installer.sh
 - octopus will become system software
 
+# Third Party Tools and Scripts
+- Installer will handle third party installations
+- Software will handle third party tools and arugments in accurate manner
+
 # Compatible
 - Android Led TV, Termux, Linux, Windows
+
+# Programmer
+- Haroon Awan
+- mrharoonawan@gmail.com
+
+# Senior Tester
+- Arun S.
