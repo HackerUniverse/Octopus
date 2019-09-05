@@ -1013,7 +1013,7 @@ sub menu {
         print line_u(),color('bold cyan'),"                                        #                        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                         #   \n",line_d();
         print color('bold green'),"\n\n0ctopus _>  ";
         print color('bold white');
-        chomp($sqlivv=<STDIN>);
+        #chomp($sqlivv=<STDIN>);
         print "\n";
         sqliv();
         enter();
