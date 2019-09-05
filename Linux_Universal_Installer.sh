@@ -111,13 +111,13 @@ quit
 echo "y" | git clone https://github.com/the-robot/sqliv.git
 cd sqliv
 chmod u+x *
-cp * ../
+cp * -r ../
 cd ..
 sudo python2 setup.py -i
 echo "y" | git clone https://github.com/JukArkadiy/odat.git
 cd odat
 chmod u+x *
-cp * ../
+cp * -r ../
 cd ..
 echo "y" | apt-get install nmap
 echo "y" | apt-get install xrdp
