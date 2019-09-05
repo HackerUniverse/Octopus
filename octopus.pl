@@ -2050,14 +2050,37 @@ sub sqlmap ( ) {
 #           48 - SqlIV Scan                                    #
 #--------------------------------------------------------------#
 sub sqliv ( ) {
-    print item(),"1 - SQLIV Mass Dork Scans \n";    
-    print item(),"2 - SQLIV Parameter Scan \n";
+    print item(),"Hint: File will be saved as searches.txt as per search \n";    
+    print item(),"1 - SQLIV Mass Dork Scans using google\n";    
+    print item(),"2 - SQLIV Mass Dork Scans using yahoo\n";    
+    print item(),"3 - SQLIV Mass Dork Scans using bing\n";    
+    print item(),"4 - SQLIV Parameter Scan \n";
     print item(),"Enter Option: ";	
     chomp($enter=<STDIN>);
 	if ($enter =~1) {
     print item(),"Enter Dork, Refer to Google Dorks \n";             
     chomp($dork=<STDIN>);
-    if (system("python sqliv.py -d '$dork' -e google ") == 0) {
+    if (system("python sqliv.py -d '$dork' -e google -p 100 -s") == 0) {
+	print item(),"success!\n";	
+	}
+	else {
+	print item(),"Error, Command Failed\n";
+	}
+    }
+    if ($enter =~2) {
+    print item(),"Enter Dork, Refer to Yahoo Dorks \n";             
+    chomp($dork=<STDIN>);
+    if (system("python sqliv.py -d '$dork' -e yahoo -p 100 -s") == 0) {
+	print item(),"success!\n";	
+	}
+	else {
+	print item(),"Error, Command Failed\n";
+	}
+    }
+    if ($enter =~3) {
+    print item(),"Enter Dork, Refer to Bing Dorks \n";             
+    chomp($dork=<STDIN>);
+    if (system("python sqliv.py -d '$dork' -e bing -p 100 -s") == 0) {
 	print item(),"success!\n";	
 	}
 	else {
