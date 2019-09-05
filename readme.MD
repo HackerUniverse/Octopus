@@ -5,8 +5,9 @@
 - Original and Powerful Database Dorks Hacking
 
 # Disclaimer
-- Hacking into any one's system is illegal without legal consent
-- Third Party Tools are Property of Respected Owners, No Coding is Changed/Modified
+- Hacking any one's system is illegal without legal consent
+- Third Party Tools are Property of Respected Owners
+- No Coding Changed/Modified
 
 # Document
 - Breaking into the databases from the internet, uploading asap
