@@ -81,13 +81,13 @@ echo "y" | apt-get install gem
 echo "y" | git clone https://github.com/the-robot/sqliv.git
 cd sqliv
 chmod u+x *
-cp * ../
+cp * -r ../
 cd ..
 python2 setup.py -i
 echo "y" | git clone https://github.com/JukArkadiy/odat.git
 cd odat
 chmod u+x *
-cp * ../
+cp * -r ../
 cd ..
 pip install jsbeautifier
 pip install argparse
