@@ -36,7 +36,7 @@ echo "        	 .##.....##..##..........##.....##...##..##........##.....##.....
 echo "        	 .##.....##..##....##....##.....##...##..##........##.....##........##.	 "; 
 echo "        	 ..#######....######.....##.....#######..##........#########...######...	 ";  
 echo "                                                                                               ";
-echo "         	        An Automated Database Hacking Softgware     Version 1.9a        ";   
+echo "         	        An Automated Database Hacking Software     Version 1.9a        ";   
 echo "         	                        [Coded By: Haroon Awan]                                       ";
 echo "         	                    [Contact: mrharoonawan@gmail.com]                                  ";
 echo "                                                                                               ";
