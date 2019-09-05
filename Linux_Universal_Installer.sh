@@ -126,6 +126,10 @@ pip install tabulate
 pip install terminaltables
 pip install argparse
 pip install requests
+pip install bs4
+pip install termcolor
+pip install terminaltables
+pip install nyawc
 pip install request
 chmod u+x *.sh
 cp * -r /usr/share/octopus
