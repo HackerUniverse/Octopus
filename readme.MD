@@ -29,11 +29,15 @@
     <img src="https://i.ibb.co/vZHmbXr/3.png" width="600px"</img> 
 </div>
 
-# Android Termux / Linux Installation
+# Android Installation
 - ./chmod u+x *
-- ./Universal_Installer.sh
+- ./Termux_Installe.sh
+- perl octopus.pl after installation
+
+# Linux Installation
+- ./chmod u+x *
+- ./Linux_Universal_Installer.sh
 - octopus will become system software
-- termux users, simply use: perl octopus.pl after installation
 
 # Compatible
 - Android Led TV, Termux, Linux, Windows
