@@ -5,9 +5,7 @@
 - Original and Powerful Database Dorks Hacking
 
 # Disclaimer
-- Hacking any one's system is illegal without legal consent
 - Third Party Tools are Property of Respected Owners
-- No Coding Changed/Modified
 
 # Document
 - Breaking into the databases from the internet, uploading asap
@@ -54,10 +52,6 @@
 - ./chmod u+x *
 - ./Linux_Universal_Installer.sh
 - octopus will become system software
-
-# Third Party Tools and Scripts
-- Installer will handle third party installations
-- Software will handle third party tools and arugments in accurate manner
 
 # Compatible
 - Android Led TV, Termux, Linux, Windows
