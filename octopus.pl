@@ -572,7 +572,7 @@ sub menu {
     print color('bold cyan'),"					#          ";print color('reset'),item('41'),"ORACLE    - Enumerate SID Common Passwords with OScanner";print color('bold cyan'),"  #   \n";
     print color('bold cyan'),"					#          ";print color('reset'),item('42'),"ORACLE    - BruteForce - SID with Hydra";print color('bold cyan'),"                   #   \n";
     print color('bold cyan'),"					#          ";print color('reset'),item('43'),"ORACLE    - Load Odat Tool";print color('bold cyan'),"                                #   \n";                                
-    print color('bold cyan'),"					#          ";print color('reset'),item('44'),"ORACLE    - Check RDP, MS RPC and Netbios Ports";print color('bold cyan'),"           #   \n";    
+    print color('bold cyan'),"					#          ";print color('reset'),item('44'),"NMAP      - Check RDP, MS RPC and Netbios Ports";print color('bold cyan'),"           #   \n";    
     print color('bold cyan'),"					#          ";print color('reset'),item('45'),"DEADLOCKS - Find IIS Directories";print color('bold cyan'),"                          #   \n";    
     print color('bold cyan'),"					#          ";print color('reset'),item('46'),"DEADLOCKS - Perform Nikto Scan on Server";print color('bold cyan'),"                  #   \n";
     print color('bold cyan'),"					#          ";print color('reset'),item('47'),"DEADLOCKS - Perform SQLMAP on Parameter";print color('bold cyan'),"                   #   \n";
