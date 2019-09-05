@@ -1,7 +1,7 @@
 use LWP::Simple;
 use URI;
 
-#print "[+] Enter Target URL : " ;
+print "[+] Enter Target URL : " ;
 #my $url   = <STDIN>;
 foreach my $url ( <STDIN> ) {
     chomp( $url );
