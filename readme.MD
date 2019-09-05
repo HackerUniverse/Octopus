@@ -4,6 +4,10 @@
 - An Automated Database Hacking Software 
 - Original and Powerful Database Dorks Hacking
 
+# Disclaimer
+- Hacking into any one's system is illegal without legal consent
+- Third Party Tools are Property of Respected Owners, No Coding is Changed/Modified
+
 # Document
 - Breaking into the databases from the internet, uploading asap
 
@@ -15,6 +19,11 @@
 # License
 - EULA
 
+# Automated Installation Interface
+<div align="center">
+    <img src="https://i.ibb.co/vZHmbXr/3.png" width="600px"</img> 
+</div>
+
 # Interface1
 <div align="center">
     <img src="https://i.ibb.co/47Js3VZ/1.png" width="600px"</img> 
@@ -25,10 +34,15 @@
     <img src="https://i.ibb.co/Vq3FycT/2.png" width="600px"</img> 
 </div>
 
-# Automated Installation Interface
+# Hacking
 <div align="center">
-    <img src="https://i.ibb.co/vZHmbXr/3.png" width="600px"</img> 
+    <img src="https://i.ibb.co/bXnrQq6/1.png" width="600px"</img> 
 </div>
+
+<div align="center">
+    <img src="https://i.ibb.co/znf5Ksj/2.png" width="600px"</img> 
+</div>
+
 
 # Android Installation
 - ./chmod u+x *
