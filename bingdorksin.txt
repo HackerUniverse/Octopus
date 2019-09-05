@@ -1,3 +1,4 @@
+index.php?page= university domain:in
 view_items.php?id= domain:in 
 home.php?cat= domain:in 
 item_book.php?CAT= domain:in 
