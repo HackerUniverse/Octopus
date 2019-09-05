@@ -45,7 +45,7 @@
 
 # Android Installation
 - ./chmod u+x *
-- ./Termux_Installe.sh
+- ./Termux_Installer.sh
 - perl octopus.pl after installation
 
 # Linux Installation
