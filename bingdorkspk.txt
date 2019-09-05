@@ -1,3 +1,4 @@
+index.php?page= university site:pk
 view_items.php?id= domain:pk 
 home.php?cat= domain:pk 
 item_book.php?CAT= domain:pk 
