@@ -89,6 +89,8 @@ cd odat
 chmod u+x *
 cp * ../
 cd ..
+pip install tabulate
+pip install terminaltables
 pip install jsbeautifier
 pip install argparse
 pip install requests

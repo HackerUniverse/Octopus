@@ -122,6 +122,8 @@ cd ..
 echo "y" | apt-get install nmap
 echo "y" | apt-get install xrdp
 pip install jsbeautifier
+pip install tabulate
+pip install terminaltables
 pip install argparse
 pip install requests
 pip install request
