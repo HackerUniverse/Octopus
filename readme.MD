@@ -1,7 +1,8 @@
 # F.A.Q
 
 # Octopus
-- An Automated Database Hacking Software
+- An Automated Database Hacking Software 
+- Original and Powerful Database Dorks Hacking
 
 # Document
 - Breaking into the databases from the internet, uploading asap
