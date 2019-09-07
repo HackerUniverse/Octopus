@@ -105,9 +105,6 @@ echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
 echo "y" | apt-get install smbclient
 echo "y" | apt-get install gem
-perl -MCPAN -e shell
-install LWP::Protocol::https
-quit
 echo "y" | git clone https://github.com/the-robot/sqliv.git
 cd sqliv
 chmod u+x *
